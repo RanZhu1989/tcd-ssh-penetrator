@@ -4,7 +4,7 @@
 Some graduate students in TCD may need to access their desktops in the lab remotely. Serval potential solutions are listed and there is no perfect solution for this purpose so far.
 | Method| Costs | Works | Pros | Cons |
 |---|---|---|---|---|
-| Direct SSH | Free  | ✗  | Fast for remove coding | BANDED by TCD |
+| Direct SSH | Free  | ✗  | Best for remote coding | BANDED by TCD |
 |RestDesk | Free  |  ✗| Free | Both official & private servers are BANED by TCD |
 | ToDesk   | ~25Euro+/Y   |  ✓   | Install and enjoy | Terrible performance |
 
