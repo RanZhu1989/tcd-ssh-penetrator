@@ -1,7 +1,14 @@
 # SSH Penetration Solution for TCD
 
 ## 1. Introduction
-Some graduate students in TCD may need to access their desktops in the lab remotely. This document provides a solution to access the desktops in the lab remotely using SSH. The core idea is:
+Some graduate students in TCD may need to access their desktops in the lab remotely. Serval potential solutions are listed and there is no perfect solution for this purpose so far.
+| Method| Costs | Works | Pros | Cons |
+|---|---|---|---|---|
+| Direct SSH | Free  | ✗  | Fast for remove coding | BANDED by TCD |
+|RestDesk | Free  |  ✗| Free | Both official & private servers are BANED by TCD |
+| ToDesk   | ~25Euro+/Y   |  ✓   | Install and enjoy | Terrible performance |
+
+This document provides a simple solution to access the desktops in the lab remotely using SSH. The core idea is:
 - Reverse SSH tunneling between the desktop in the lab and an **ACCESSIBLE** server (e.g., Azure).
 - **Port forwarding** from prot 22 to another port (e.g., 2222) on the server.
 
@@ -106,3 +113,7 @@ while true; do
     sleep WAITING_TIME_SECOND
 done
 ```
+## 5. SSH from Lab to Remote Servers
+Sometimes you may need to SSH from your lab desktop to other servers (at your home, for example). You can try following the same steps to establish a reverse SSH tunneling from the lab desktop to the server at home. Then you can SSH from the lab desktop to the server at home.
+
+I have not tried this yet. If you have any questions or suggestions, please feel free to contact me. I am happy to help you.
