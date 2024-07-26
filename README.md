@@ -74,7 +74,7 @@ tcp        0      0 0.0.0.0:2222         0.0.0.0:*               LISTEN
 tcp6       0      0 :::2222              :::*                    LISTEN
 ```
 
-## 4.3 Access the Desktop Remotely
+### 4.3 Access the Desktop Remotely
 Now you can access the desktop remotely. Assume the domain name of the Azure server is `DOMAIN_NAME`, the username of your **lab desktop** is `LOCAL_USER`, and the port you want to forward is `2222`. Run the following command on your local machine:
 ```shell
 ssh -p 2222 LOCAL_USER@DOMAIN_NAME
@@ -83,7 +83,7 @@ If connected successfully, you should input the password of your **lab desktop**
 
 If you have set up the public key authentication in your lab desktop, you add `-i' option to specify the private key.
 
-## 4.4 Automation
+### 4.4 Automation
 You can write a script to automate the process. For example, create a file `tunnel.sh` with the following content:
 ```shell
 #!/bin/bash
